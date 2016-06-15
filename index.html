@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <title>Juego de Gato</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/animate.min.css" type="text/css"> 
+       
+    </head>
+    <body>
+    <section>
+        <div class="container">
+            <div class="row .Margin">
+                <div class="col-md-12 text-center Margin">
+                    <h1>Juego de Gato</h1>
+                    <div id="BInicio">Comienza ya</div>
+                </div>
+            </div>
+            <div class="row Panel">
+                <div class="col-md-4 col-xs-4 text-right wow bounceInLeft"><button class="buttons" name="b1" onclick="actions(this)"></button></div>
+                <div class="col-md-4 col-xs-4 text-center wow bounceInDown"><button class="buttons" name="b2" onclick="actions(this)"></button></div>
+                <div class="col-md-4 col-xs-4 text-left wow bounceInRight"><button class="buttons" name="b3" onclick="actions(this)"></button></div>
+            </div>
+            <div class="row Panel text-center">
+                <div class="col-md-4 col-xs-4 text-right wow bounceInLeft"><button class="buttons" name="b4" onclick="actions(this)"></button></div>
+                <div class="col-md-4 col-xs-4 text-center wow bounce"><button class="buttons" name="b5" onclick="actions(this)"></button></div>
+                <div class="col-md-4 col-xs-4 text-left wow bounceInRight"><button class="buttons" name="b6" onclick="actions(this)"></button></div>
+            </div>
+            <div class="row Panel text-center">
+                <div class="col-md-4 col-xs-4 text-right wow bounceInLeft"><button class="buttons" name="b7" onclick="actions(this)"></button></div>
+                <div class="col-md-4 col-xs-4 text-center wow bounceInUp"><button class="buttons" name="b8" onclick="actions(this)"></button></div>
+                <div class="col-md-4 col-xs-4 text-left wow bounceInRight"><button class="buttons" name="b9" onclick="actions(this)"></button></div>
+            </div>
+        </div>
+    </section>
+        <!-- Inserta tu codigo aqui -->
+        <script src="https://code.jquery.com/jquery-2.2.2.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/wow.min.js"></script>
+    
+    <script>
+        new WOW().init();
+    </script>
+    </body>
+</html>

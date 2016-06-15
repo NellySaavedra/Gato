@@ -1,0 +1,40 @@
+body {
+	color: #9D1659 !important;
+}
+#BInicio {
+	background-color: #C5DB3A;
+	color: #FFFFFF;
+	font-size: 30px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+button{
+ width: 50%;
+ height: 180px;
+ border: 10px solid #FFFFFF;
+ border-radius: 100%;
+ font-size: 100px !important;
+ color: #FFFFFF !important;
+}
+.Margin {
+	margin-bottom: 20px;
+}
+.clicked{
+ background-color: #2E162C;
+}
+.buttons{
+ background-color: #11B89E;
+}
+.buttons:hover {
+ background-color: #C5DB3A;
+}
+.col-md-4 {
+	padding: 5px !important;
+}
+@media (max-width: 770px) {
+	button {
+		width: 100%;
+		border-radius: 0%;
+		height: 160px;
+	}
+}

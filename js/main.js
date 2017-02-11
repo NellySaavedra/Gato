@@ -1,8 +1,25 @@
 $(document).ready(function(){
-  $('#BInicio').click(function(){
+    $("form").hide();
+    $("#jugar").click(function(){
+        $("form").show();
+        $("img").hide();
+        $("#jugar").hide();
+    });
+      $('#BInicio').click(function(){
       window.location.reload();  
    });
 });
+
+$('#btnClick').click(function(){
+  var nombre = $('#inputNombre').val(); 
+  console.log('El usuario escribió: ' + nombre);
+
+});
+
+
+
+
+
 
 var Alternancia =1;
 var casilla1="casilla1",
@@ -20,9 +37,9 @@ function actions(boton){
   boton.className="clicked";
   var text;
   if(Alternancia%2==0){
-        text="G";
+        text="X";
   }else{
-        text="N";
+        text="O";
   }
   boton.value=text;
   boton.appendChild(document.createTextNode(text));
@@ -32,42 +49,42 @@ function actions(boton){
 }
 var empate = 0;
 function asignation(text,boton){
-       if(casilla1==boton.name){
-        casilla1=text;
-        empate++;
-       }
-       else if(casilla2==boton.name){
-        casilla2=text;
-        empate++;
-       }
-       else if(casilla3==boton.name){
-        casilla3=text;
-        empate++;
-       }
-       else if(casilla4==boton.name){
-        casilla4=text;
-        empate++;
-       }
-       else if(casilla5==boton.name){
-        casilla5=text;
-        empate++;
-       }
-       else if(casilla6==boton.name){
-        casilla6=text;
-        empate++;
-       }
-       else if(casilla7==boton.name){
-        casilla7=text;
-        empate++;
-       }
-       else if(casilla8==boton.name){
-        casilla8=text;
-        empate++;
-       }
-       else if(casilla9==boton.name){
-        casilla9=text;
-        empate++;
-       }
+ if(casilla1==boton.name){
+  casilla1=text;
+  empate++;
+ }
+ else if(casilla2==boton.name){
+  casilla2=text;
+  empate++;
+  }
+  else if(casilla3==boton.name){
+   casilla3=text;
+   empate++;
+  }
+  else if(casilla4==boton.name){
+   casilla4=text;
+   empate++;
+  }
+  else if(casilla5==boton.name){
+   casilla5=text;
+   empate++;
+  }
+  else if(casilla6==boton.name){
+   casilla6=text;
+   empate++;
+  }
+  else if(casilla7==boton.name){
+   casilla7=text;
+   empate++;
+  }
+  else if(casilla8==boton.name){
+   casilla8=text;
+   empate++;
+  }
+  else if(casilla9==boton.name){
+   casilla9=text;
+   empate++;
+  }
  validation(text);
 }
 
@@ -87,3 +104,20 @@ function validation(text){
    }
 }
 
+$(function () {
+    /* Menu */
+    if (window.location == window.parent.location) {
+        $('#fullscreen').html('<span class="glyphicon glyphicon-resize-small"></span>');
+        $('#fullscreen').attr('href', 'http://bootsnipp.com/mouse0270/snippets/PbDb5');
+        $('#fullscreen').attr('title', 'Back To Bootsnipp');
+    }    
+    $('#fullscreen').on('click', function(event) {
+        event.preventDefault();
+        window.parent.location =  $('#fullscreen').attr('href');
+    });
+    $('#fullscreen').tooltip();
+    $('.navbar-toggler').on('click', function(event) {
+    event.preventDefault();
+    $(this).closest('.navbar-minimal').toggleClass('open');
+  })
+});

@@ -4,21 +4,51 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-        <title>Juego de Gato</title>
+        <title>GatoLoco</title>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="welcome.html">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/animate.min.css" type="text/css"> 
+				<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
        
     </head>
     <body>
-    <section>
+      <header>
+        <nav class="navbar navbar-fixed-left navbar-minimal animate" role="navigation">
+          <div class="navbar-toggler animate">
+            <span class="menu-icon"></span>
+          </div>
+            <ul class="navbar-menu animate">
+              <li>
+                <a href="welcome.html" class="animate">
+                  <span class="desc animate"> INICIO </span>
+                  <span class="glyphicon glyphicon glyphicon-home"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#historial" class="animate">
+                  <span class="desc animate"> HISTORIAL </span>
+                  <span class="glyphicon glyphicon glyphicon-list-alt"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#comentarios" class="animate">
+                  <span class="desc animate"> COMENTARIOS </span>
+                  <span class="glyphicon glyphicon glyphicon-comment"></span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+      </header>
+    	<section class="box-cat">
         <div class="container">
-            <div class="row .Margin">
+            <div class="row">
                 <div class="col-md-12 text-center Margin">
-                    <h1>Juego de Gato</h1>
-                    <h2><span id="BInicio">Comienza ya</span></h2>
+                    <h1 class="page1-h1">Gato Loco</h1>
+                    <h2><span id="BInicio">Partida Nueva</span></h2>
                 </div>
             </div>
             <div class="row Panel">
@@ -41,12 +71,11 @@
         <!-- Inserta tu codigo aqui -->
         <script src="https://code.jquery.com/jquery-2.2.2.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/wow.min.js"></script>
     
     <script>
         new WOW().init();
     </script>
-    </body>
+   	</body>
 </html>

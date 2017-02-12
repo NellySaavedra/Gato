@@ -61,7 +61,6 @@
 		-ms-transform: rotate(0deg);
 		transform: rotate(0deg);
 	}
-
 	.navbar-minimal > .navbar-menu {
 		position: absolute;
 		top: -1000px;
@@ -91,7 +90,6 @@
 		text-decoration: none;
 		margin: 0px;
 	}
-
 	.navbar-minimal > .navbar-menu > li > a:last-child {
 		border-bottom-width: 0px;
 	}
@@ -101,11 +99,9 @@
 	.navbar-minimal > .navbar-menu > li > a > .glyphicon {
 		float: right;
 	}
-
 	.navbar-minimal.open {
 		width: 320px;
 	}
-
 	.navbar-minimal.open > .navbar-toggler > span {
 		background-position: 0 -16px;
 		-webkit-transform: rotate(-180deg);
@@ -114,7 +110,6 @@
 		-ms-transform: rotate(-180deg);
 		transform: rotate(-180deg);
 	}
-
 	.navbar-minimal.open > .navbar-menu {
 		top: 60px;
 		width: 100%;
@@ -126,19 +121,21 @@ a {
 	text-decoration: none !important;
 }
 .page1-h1 {
-	font-size: 4em;
+	font-size: 3em;
 }
 .img-responsive {
 	width: 30%;
 }
 .element {
-	cursor:pointer;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 40px;
 	animation: roll 3s;
     transform: rotate(360deg);
     opacity: .7;
+}
+.btnOk {
+	background-color: red;
 }
 #jugar {
 	padding: 20px;
@@ -181,7 +178,7 @@ form {
 .right-addon input { padding-right: 30px; }
 
 /*JUEGO DE GATO*/
-.box-cat {
+section {
 margin-top: -90px;
 }
 #BInicio {

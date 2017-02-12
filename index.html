@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <head>
+  <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -14,68 +14,92 @@
 				<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
        
-    </head>
-    <body>
-      <header>
-        <nav class="navbar navbar-fixed-left navbar-minimal animate" role="navigation">
-          <div class="navbar-toggler animate">
-            <span class="menu-icon"></span>
-          </div>
-            <ul class="navbar-menu animate">
-              <li>
-                <a href="welcome.html" class="animate">
-                  <span class="desc animate"> INICIO </span>
-                  <span class="glyphicon glyphicon glyphicon-home"></span>
-                </a>
-              </li>
-              <li>
-                <a href="#historial" class="animate">
-                  <span class="desc animate"> HISTORIAL </span>
-                  <span class="glyphicon glyphicon glyphicon-list-alt"></span>
-                </a>
-              </li>
-              <li>
-                <a href="#comentarios" class="animate">
-                  <span class="desc animate"> COMENTARIOS </span>
-                  <span class="glyphicon glyphicon glyphicon-comment"></span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-      </header>
-    	<section class="box-cat">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center Margin">
-                    <h1 class="page1-h1">Gato Loco</h1>
-                    <h2><span id="BInicio">Partida Nueva</span></h2>
-                </div>
-            </div>
-            <div class="row Panel">
-                <div class="col-md-4 col-xs-4 text-right wow bounceInLeft"><button class="buttons" name="casilla1" onclick="actions(this)"></button></div>
-                <div class="col-md-4 col-xs-4 text-center wow bounceInDown"><button class="buttons" name="casilla2" onclick="actions(this)"></button></div>
-                <div class="col-md-4 col-xs-4 text-left wow bounceInRight"><button class="buttons" name="casilla3" onclick="actions(this)"></button></div>
-            </div>
-            <div class="row Panel text-center">
-                <div class="col-md-4 col-xs-4 text-right wow bounceInLeft"><button class="buttons" name="casilla4" onclick="actions(this)"></button></div>
-                <div class="col-md-4 col-xs-4 text-center wow bounce"><button class="buttons" name="casilla5" onclick="actions(this)"></button></div>
-                <div class="col-md-4 col-xs-4 text-left wow bounceInRight"><button class="buttons" name="casilla6" onclick="actions(this)"></button></div>
-            </div>
-            <div class="row Panel text-center">
-                <div class="col-md-4 col-xs-4 text-right wow bounceInLeft"><button class="buttons" name="casilla7" onclick="actions(this)"></button></div>
-                <div class="col-md-4 col-xs-4 text-center wow bounceInUp"><button class="buttons" name="casilla8" onclick="actions(this)"></button></div>
-                <div class="col-md-4 col-xs-4 text-left wow bounceInRight"><button class="buttons" name="casilla9" onclick="actions(this)"></button></div>
-            </div>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-fixed-left navbar-minimal animate" role="navigation">
+        <div class="navbar-toggler animate">
+          <span class="menu-icon"></span>
         </div>
+        <ul class="navbar-menu animate">
+          <li>
+            <a href="#home" class="animate">
+              <span class="desc animate"> INICIO </span>
+              <span class="glyphicon glyphicon glyphicon-home"></span>
+            </a>
+          </li>
+          <li>
+        		<a href="#historial" class="animate">
+		          <span class="desc animate"> HISTORIAL </span>
+		          <span class="glyphicon glyphicon glyphicon-list-alt"></span>
+	        	</a>
+        	</li>
+        	<li>
+	          <a href="#comentarios" class="animate">
+	            <span class="desc animate"> COMENTARIOS </span>
+	            <span class="glyphicon glyphicon glyphicon-comment"></span>
+	          </a>
+        	</li>
+       </ul>
+      </nav>
+    </header>
+    <section>   
+      <div class="container acceso">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1 class="page1-h1">Gato Loco</h1>
+            <img src="css/luckyCat.png" alt="Gato de la suerte" class="img-responsive element">
+            <form action="" id="form-resgistro">
+              <h2>Registro</h2>
+              <div class="inner-addon left-addon">
+                <i class="glyphicon glyphicon glyphicon-heart"></i>
+                <input type="text" class="form-control"  placeholder="Concursante Uno" id="inputNombreA"/>
+                <p id="demoA"></p>
+              </div>
+              <div class="inner-addon left-addon">
+                <i class="glyphicon glyphicon glyphicon-star"></i>                        
+                <input type="text" class="form-control"  placeholder="Concursante Dos" id="inputNombreB"/>
+              </div>
+              <button class="btnOk" onclick="myFunction()">ok</button>
+            </form>
+           	<a href="#" id="jugar">Jugar</a>
+          </div>
+        </div>
+      </div> 
     </section>
-        <!-- Inserta tu codigo aqui -->
-        <script src="https://code.jquery.com/jquery-2.2.2.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/wow.min.js"></script>
-    
-    <script>
-        new WOW().init();
-    </script>
-   	</body>
+    <section class="box-cat">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center Margin">
+              <h1 class="page1-h1">Gato Loco: <span id="demoB"></span></h1>
+              <h2><span id="BInicio">Nuevo Juego</span></h2>
+            </div>
+          </div>
+          <div class="row Panel">
+            <div class="col-md-4 col-xs-4 text-right wow bounceInLeft"><button class="buttons" name="casilla1" onclick="actions(this)"></button></div>
+            <div class="col-md-4 col-xs-4 text-center wow bounceInDown"><button class="buttons" name="casilla2" onclick="actions(this)"></button></div>
+            <div class="col-md-4 col-xs-4 text-left wow bounceInRight"><button class="buttons" name="casilla3" onclick="actions(this)"></button></div>
+          </div>
+          <div class="row Panel text-center">
+            <div class="col-md-4 col-xs-4 text-right wow bounceInLeft"><button class="buttons" name="casilla4" onclick="actions(this)"></button></div>
+            <div class="col-md-4 col-xs-4 text-center wow bounce"><button class="buttons" name="casilla5" onclick="actions(this)"></button></div>
+            <div class="col-md-4 col-xs-4 text-left wow bounceInRight"><button class="buttons" name="casilla6" onclick="actions(this)"></button></div>
+          </div>
+          <div class="row Panel text-center">
+            <div class="col-md-4 col-xs-4 text-right wow bounceInLeft"><button class="buttons" name="casilla7" onclick="actions(this)"></button></div>
+            <div class="col-md-4 col-xs-4 text-center wow bounceInUp"><button class="buttons" name="casilla8" onclick="actions(this)"></button></div>
+            <div class="col-md-4 col-xs-4 text-left wow bounceInRight"><button class="buttons" name="casilla9" onclick="actions(this)"></button></div>
+          </div>
+       	</div>
+   	</section>
+
+	  <script src="https://code.jquery.com/jquery-2.2.2.js"></script>
+	  <script src="js/main.js"></script>
+	  <script src="js/bootstrap.min.js"></script>
+	  <script src="js/wow.min.js"></script>
+	    
+	  <script>
+	    new WOW().init();
+	  </script>
+  </body>
 </html>

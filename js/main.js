@@ -22,7 +22,7 @@ $(document).ready(function(){
       $("img").hide();
       $("#jugar").hide();
     });
-  /* */
+  
     $(".box-cat").hide();
     $(".btnOk").click(function(){
       $(".acceso").hide();
@@ -31,7 +31,11 @@ $(document).ready(function(){
     $('#BInicio').click(function(){
       window.location.reload();  
     });
+    $('.home').click(function(){
+      window.location.reload();  
+    });
 });
+
 function myFunction() {
   var personA = document.getElementById("inputNombreA").value;
   var personB = document.getElementById("inputNombreB").value;
@@ -45,13 +49,10 @@ function myFunction() {
   }
 }
 
-
-
 /*CONTADOR*/
 var contador = 0;
 var O = "X"; 
 var X = "O";
-
 
 /*JUEGO*/
 var Alternancia =1;
@@ -121,18 +122,18 @@ function asignation(text,boton){
  validation(text);
 }
 
-function validation(text){
- if((casilla1==casilla2 && casilla2==casilla3)||(casilla1==casilla5 && casilla5==casilla9)
-  ||(casilla3==casilla5 && casilla5==casilla7)||(casilla4==casilla5 && casilla5==casilla6)
-  ||(casilla7==casilla8 && casilla8==casilla9)||(casilla1==casilla4 && casilla4==casilla7)
-  ||(casilla2==casilla5 && casilla5==casilla8)||(casilla3==casilla6 && casilla6==casilla9)) {
+function validation(text) {
+  if((casilla1==casilla2 && casilla2==casilla3)||(casilla1==casilla5 && casilla5==casilla9)
+    ||(casilla3==casilla5 && casilla5==casilla7)||(casilla4==casilla5 && casilla5==casilla6)
+    ||(casilla7==casilla8 && casilla8==casilla9)||(casilla1==casilla4 && casilla4==casilla7)
+    ||(casilla2==casilla5 && casilla5==casilla8)||(casilla3==casilla6 && casilla6==casilla9)) {
     var Alternancia=confirm("Felicidades! Has ganado! Da clic para volver a comenzar");
-    if(Alternancia==true){
+    if(Alternancia==true) {
       window.location.reload();     
     }
   }
-   else if(empate==9){
+  else if(empate==9) {
     alert("ESTO FUE UN EMPATE. Volvamos a empezar");
     window.location.reload();
-   }
+  }
 }
